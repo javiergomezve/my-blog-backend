@@ -17,7 +17,7 @@ app.get('/api/articles/:name', async (req, res) => {
 
     client.close();
   } catch (err) {
-    res.status(500).json({ message: 'Error cnnnection to db', error });
+    res.status(500).json({ message: 'Error connection to db', error });
   }
 });
 
@@ -40,7 +40,7 @@ app.post('/api/articles/:name/upvote', async (req, res) => {
 
     client.close();
   } catch (err) {
-    res.status(500).json({ message: 'Error cnnnection to db', error });
+    res.status(500).json({ message: 'Error connection to db', error });
   }
 });
 
